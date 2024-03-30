@@ -1,4 +1,5 @@
-This repository is used to build the base image for running docker-compose applications on Koyeb.
+
+<a href="https://app.koyeb.com/deploy?name=docker-compose-on-koyeb&amp;privileged=true&amp;type=git&amp;repository=github.com/yingnengd/koyeb-d-compose&amp;branch=main&amp;builder=dockerfile&amp;dockerfile=Dockerfile.koyeb" rel="nofollow"><img src="https://camo.githubusercontent.com/8f91e42463870497e0309c48e99d9e455d62f8d454c809e78b154384dd24329d/68747470733a2f2f7777772e6b6f7965622e636f6d2f7374617469632f696d616765732f6465706c6f792f627574746f6e2e737667" alt="Deploy to Koyeb" data-canonical-src="https://www.koyeb.com/static/images/deploy/button.svg" style="max-width: 100%;"></a>
 
 ## Usage
 
