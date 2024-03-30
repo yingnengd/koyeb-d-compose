@@ -1,0 +1,28 @@
+version: "3"
+services:
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+    volumes:
+      - mariadata:/var/lib/mysql
+    networks:
+      - my-bridge
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80 # 如果8080被占用，修改8080为任意其他端口
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_PASSWORD: root
+    networks:
+      - my-bridge
+    depends_on:
+      - mariadb
+volumes:
+  mariadata:
+    driver: local
+networks:
+  my-bridge:
+    driver: bridge
